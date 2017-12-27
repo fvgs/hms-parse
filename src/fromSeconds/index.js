@@ -4,6 +4,10 @@ const SECONDS_PER_MINUTE = 60
 const padNum = num => String(num).padStart(2, '0')
 
 module.exports = seconds => {
+	if (typeof seconds !== 'number') {
+		throw new Error(`Expected argument of type number but received: ${seconds}`)
+	}
+
 	const hours = Math.floor(seconds / SECONDS_PER_HOUR)
 	let secondsLeft = seconds % SECONDS_PER_HOUR
 	const minutes = Math.floor(secondsLeft / SECONDS_PER_MINUTE)
