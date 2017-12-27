@@ -1,6 +1,6 @@
 {
 	"name": "hms-parse",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Parse hms time strings to and from seconds",
 	"author": "Felipe Vargas <felipe@fvgs.ai> (fvgs.ai)",
 	"repository": "fvgs/hms-parse",
